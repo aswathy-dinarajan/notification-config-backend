@@ -16,6 +16,8 @@ public class NotificationConfigDTO implements Serializable {
 	private Date dob;
 	private String message;
 	private String mobile;
+	private String email;
+	private String subject;
 	
 	private Integer pageSize;
 	private Integer pageNumber;
@@ -74,6 +76,22 @@ public class NotificationConfigDTO implements Serializable {
 
 	public void setPageNumber(Integer pageNumber) {
 		this.pageNumber = pageNumber;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getSubject() {
+		return subject;
+	}
+
+	public void setSubject(String subject) {
+		this.subject = subject;
 	}
 
 

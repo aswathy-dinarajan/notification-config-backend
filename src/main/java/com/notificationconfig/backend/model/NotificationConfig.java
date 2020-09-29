@@ -13,7 +13,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="SALES")
+@Table(name="NOTIFICATION_CONFIG")
 public class NotificationConfig implements Serializable {
 	
 	/**
@@ -37,6 +37,13 @@ public class NotificationConfig implements Serializable {
 	
 	@Column(name="MOBILE_NO")
 	private String mobile;
+	
+	@Column(name="EMAIL")
+	private String email;
+	
+	@Column(name="SUBJECT")
+	private String subject;
+	
 
 	public Long getId() {
 		return id;
@@ -76,6 +83,22 @@ public class NotificationConfig implements Serializable {
 
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getSubject() {
+		return subject;
+	}
+
+	public void setSubject(String subject) {
+		this.subject = subject;
 	}
 
 	
